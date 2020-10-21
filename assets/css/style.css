@@ -1,0 +1,381 @@
+*, h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --small-text: 12px;
+    --md-text: 14px;
+}
+.container {
+    max-width: 935px;
+    margin:0px auto;
+    padding: 0;
+}
+.left-container {
+    
+}
+.container.main-block {
+    display: block;  
+    position: relative; 
+} 
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+}
+.input-icons i { 
+    position: absolute; 
+    top: 25%;
+    left: 35%;
+} 
+  
+.input-icons { 
+    width: 100%; 
+   position: relative;
+} 
+.input-field {
+    border:1px solid rgba(219, 219, 219, 1)
+}
+.fa-search {
+    color: rgba(199, 199, 199, 0.7);
+}
+.input-field::placeholder {
+
+   padding-left: 30px;
+}
+  
+.icon { 
+    padding: 10px; 
+    color: green; 
+    min-width: 50px; 
+    text-align: center; 
+} 
+  
+.input-field { 
+    width: 215px; 
+    height: 28px;
+    padding: 10px; 
+    text-align: center; 
+    background-color: #f8f8f8;
+}
+.icons {
+    padding-left: 0.5rem;
+}
+
+.icons img{
+    width: 22px;
+    height: 22px;
+    object-fit: cover;
+    margin: 0rem 0.3rem;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: #f3f3f3;
+    
+}
+
+#profile {
+    border-radius: 50%;
+}
+
+.left {
+    max-width: 614px;
+    width: 100%;
+    margin: 0;
+   margin-right: 28px;
+   float: left
+}
+/*******left container********/
+.card {
+    border-radius: 0;
+    background-color: #fff;
+}
+.friends-card {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+}
+ul.friends-list {
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 0;
+}
+li.friends {
+    list-style-type: none;
+    box-sizing: border-box;
+}
+.friends-circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    padding-left: 0.4rem;
+}
+.friends-circle canvas {
+    
+   position: absolute;
+}
+.friends-circle img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+  position: absolute;
+  left: 16%;
+  flex-wrap: wrap;
+   
+}
+.friends-circle > p {
+    font-size: 10px;
+    position: relative;
+    top: 54%;
+    max-width: 74px;
+}
+.right-arrow {
+    background-color:#f8f8f8;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+   text-align: center;
+   position: absolute;
+   right: 1%;
+   top: 35%;
+}
+.fa-chevron-right {
+    font-size: 16px;
+    color: #7e7c7a;
+
+}
+
+/********post cards **********/
+.card-header, .card-footer {
+    background-color: #fff;
+}
+.card-header-content-image{
+    display: flex;
+}
+.card-header-content-image img {
+    width:34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.card-header-inner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 15px;
+}
+.card-body {
+    padding: 0;
+    overflow: hidden;
+    
+}
+.card-body-top {
+
+    width: 100%;
+    height: 100%;
+   
+}
+.card-body-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.symbols {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.symbols-left {
+    padding: 10px 0px 4px 14px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+
+}
+.symbols-right {
+    padding-right: 1.25rem;;
+}
+.fa-bookmark {
+    font-size: 24px;
+}
+.symbols-left i {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    margin: 0.5rem
+}
+.symbols-left img {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    margin: 0.7rem 0.5rem
+}
+.card-footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.card-footer-content p:last-child {
+    opacity: 0.4;
+    color: #0095F6
+}
+.card-body-bottom {
+    position: relative;
+}
+
+.like-section {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5rem 0rem 0.5rem 1.25rem;
+}
+.like-section img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.like-section p {
+    padding-left: 0.75rem;
+    font-size: 14px;;
+}
+.comment-section {
+    padding-left: 1.25rem;
+    font-size: 14px;
+}
+.user-comment {
+    margin-bottom: 4px;
+}
+.view-comments {
+    margin-bottom: 4px;
+}
+.viewers-comment-one {
+    margin-bottom: 4px;
+}
+.viewers-comment-two {
+    margin-bottom: 4px;
+}
+.comment-section span{
+padding-right: 0.75rem;
+}
+.comment-hour {
+   margin: 0.1rem 0rem
+}
+/*right container */
+.right {
+    max-width: 293px;
+    width: 100%;
+    height: 100vh;
+   
+    position: fixed;
+    right: 0;
+}
+.right-container {
+   margin-top: 1.8rem;
+  
+}
+.profile-section {
+    display: flex;
+    justify-content: flex-start;
+}
+.profile-person{
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;;
+}
+.profile-text {
+    padding: 0.5rem 1rem;
+}
+.profile-text p:first-child {
+    font-size: var(--md-text);
+}
+.profile-text p:last-child {
+    font-size: var(--small-text);
+}
+.suggestion-container {
+    display: flex;
+    justify-content: space-between;
+}
+.suggestion-container p:first-child {
+    font-size: var(--md-text);
+}
+.suggestion-container p:last-child {
+    font-size: var(--small-text);
+}
+/*person css*/
+.person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.person-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+}
+.person-end {
+    color: #0095F6
+}
+.person-img img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.person-text p:first-child {
+    font-size: var(--md-text);
+    margin: px 0px 0px 0px;
+  
+}
+.person-text p:last-child {
+    font-size: var(--small-text);
+    margin: -3px 0px 0px 0px
+    
+}
+.person-end {
+    font-size: var(--small-text);
+}
+
+/*footer-links*/
+.footer-elements {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-links{
+    list-style-type:none;
+    color: #b0b0b2;
+    font-size: 11px;
+   
+}
+.footer-links::after {
+    content: '\00B7';
+    padding: 0.3rem;
+    color:#b0b0b2
+}
+.footer-links:last-child::after {
+    content: '';
+    padding: 0.3rem;
+    color:#b0b0b2
+}
+.footer-text {
+    color: #b0b0b2;
+    font-size: 11px;
+}
+
+/*****phone screen*******/
+@media(max-width: 576px){
+    .right {
+        max-width: 100vw;
+        width: 100%;
+        height: 100vh;
+        float:right;
+      
+    
+    }
+}
